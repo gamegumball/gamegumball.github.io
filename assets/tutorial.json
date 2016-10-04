@@ -1,0 +1,27 @@
+{
+"images": ["assets/tutorial.png"],
+"framerate": 20,
+"frames": [
+
+    [2, 646, 480, 320], 
+    [2, 324, 480, 320], 
+    [484, 2, 480, 320], 
+    [2, 2, 480, 320]
+],
+"animations": {
+    
+        "tutorial01":[0], 
+        "tutorial02":[1], 
+        "tutorial03":[2], 
+        "tutorial04":[3],
+		
+		"tutorial":{
+            "frames":[0,1,2,3],
+            "speed":0.1
+        }
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:e65c07969190c1c6c8875b1be2adaae1$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EasalJS"
+]
+}
