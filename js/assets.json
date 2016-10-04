@@ -1,0 +1,53 @@
+{
+"images": ["assets/assets.png"],
+"frames": [
+
+    [484, 21, 19, 17, 0, 9, 8], 
+    [484, 2, 25, 17, 0, 12, 8], 
+    [460, 771, 38, 19, 0, 19, 9], 
+    [2, 771, 86, 81], 
+    [187, 963, 221, 29], 
+    [256, 817, 221, 29], 
+    [2, 324, 480, 320], 
+    [2, 646, 423, 106], 
+    [427, 704, 54, 14], 
+    [256, 754, 164, 61], 
+    [90, 771, 164, 61], 
+    [427, 646, 62, 14], 
+    [52, 925, 151, 36], 
+    [422, 771, 36, 37], 
+    [2, 2, 480, 320], 
+    [2, 976, 183, 44], 
+    [427, 662, 59, 40], 
+    [2, 925, 48, 49], 
+    [427, 720, 48, 49], 
+    [2, 854, 124, 69]
+],
+"animations": {
+    
+        "1P":[0], 
+        "2P":[1], 
+        "8T":[2], 
+        "attack_fx":[3], 
+        "bar_empty":[4], 
+        "bar_full":[5], 
+        "bg":[6], 
+        "bg_asset":[7], 
+        "darwin":[8], 
+        "death_fx01":[9], 
+        "death_fx02":[10], 
+        "gumball":[11], 
+        "main_btn":[12], 
+        "pause_btn":[13], 
+        "pause_container":[14], 
+        "pause_screen_btn":[15], 
+        "score_container":[16], 
+        "sound_btn_off":[17], 
+        "sound_btn_on":[18], 
+        "vs":[19]
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:dd1804694411be4ad4faa260e2205c0b$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EasalJS"
+]
+}
