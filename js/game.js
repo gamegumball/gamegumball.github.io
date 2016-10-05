@@ -194,7 +194,7 @@ function createGame(event) {
 	//------------------------------------------------------------------
 	var mouseCacher = new createjs.Shape();
 	mouseCacher.graphics.beginFill("rgba(60, 60, 60, 1)");
-	mouseCacher.graphics.rect(0, 0, 960, 640);
+	mouseCacher.graphics.rect(0, 0, 480, 320);
 	mouseCacher.graphics.endFill();
 	mouseCacher.addEventListener("mousedown", onMouseDown);
 
