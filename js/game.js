@@ -613,7 +613,7 @@ function createGUI(ces, layer) {
 	gameOverContainer.addChild(gameOverScore);
 
 	var exitGameOverBtn = createTitleButton(spriteSheets["assets"], localization.replay, function(e) {
-		VK.api('wall.post', {message: "Я продержался " + gameOverContainer + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
+		VK.api('wall.post', {message: "Я продержался " + gameOverScore[0] + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
 		//stopSound("music");
 		playSound("button");
 		fight = 1;
