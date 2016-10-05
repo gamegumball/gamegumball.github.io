@@ -202,8 +202,7 @@ function createGame(event) {
 		if (fighter.name == "player1") {
 			guiLayer.getChildByName("gameOverContainer").visible = true;
 			guiLayer.getChildByName("gameOverContainer").getChildByName("gameOverScore").text = localization.fightsWon.replace("[FW]", fight);
-			alert(1);
-			//VK.api('wall.post', {message: "Я продержался " + replace("[FW]", fight) + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
+			VK.api('wall.post', {message: "Я продержался " + fight + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
 		
 			
 			
