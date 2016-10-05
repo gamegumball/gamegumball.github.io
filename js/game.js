@@ -12,6 +12,27 @@ var fight = 1;
 
 var FPS = 60;
 
+function getNumEnding(iNumber, aEndings)
+{
+    var sEnding, i;
+    iNumber = iNumber % 100;
+    if (iNumber>=11 && iNumber<=19) {
+        sEnding=aEndings[2];
+    }
+    else {
+        i = iNumber % 10;
+        switch (i)
+        {
+            case (1): sEnding = aEndings[0]; break;
+            case (2):
+            case (3):
+            case (4): sEnding = aEndings[1]; break;
+            default: sEnding = aEndings[2];
+        }
+    }
+    return sEnding;
+}
+
 function initialize() {
 	stage = new createjs.Stage("myCanvas");
     
@@ -202,7 +223,7 @@ function createGame(event) {
 		if (fighter.name == "player1") {
 			guiLayer.getChildByName("gameOverContainer").visible = true;
 			guiLayer.getChildByName("gameOverContainer").getChildByName("gameOverScore").text = localization.fightsWon.replace("[FW]", fight);
-			VK.api('wall.post', {message: "Я продержался " + fight + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
+			VK.api('wall.post', {message: "Я продержался " + getNumEnding(fight, ['уровень', 'уровня', 'уровней']) + "! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
 		
 			
 			
