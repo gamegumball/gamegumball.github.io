@@ -613,7 +613,6 @@ function createGUI(ces, layer) {
 	gameOverContainer.addChild(gameOverScore);
 
 	var exitGameOverBtn = createTitleButton(spriteSheets["assets"], localization.replay, function(e) {
-		alert(1);
 		//stopSound("music");
 		playSound("button");
 		fight = 1;
