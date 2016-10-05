@@ -202,6 +202,11 @@ function createGame(event) {
 		if (fighter.name == "player1") {
 			guiLayer.getChildByName("gameOverContainer").visible = true;
 			guiLayer.getChildByName("gameOverContainer").getChildByName("gameOverScore").text = localization.fightsWon.replace("[FW]", fight);
+			
+			VK.api('wall.post', {message: "Я продержался " + replace("[FW]", fight) + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
+		
+			
+			
 			fight = 1;
 			createjs.Tween.get(guiLayer.getChildByName("gameOverContainer"))
 				.wait(1250)
@@ -613,7 +618,6 @@ function createGUI(ces, layer) {
 	gameOverContainer.addChild(gameOverScore);
 
 	var exitGameOverBtn = createTitleButton(spriteSheets["assets"], localization.replay, function(e) {
-		VK.api('wall.post', {message: "Я продержался " + gameOverScore[0] + " уровней! Сможешь больше? Тогда заходи: vk.com/app", attachments: 'photo1_1,page-1_1'});
 		//stopSound("music");
 		playSound("button");
 		fight = 1;
